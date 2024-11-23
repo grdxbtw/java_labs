@@ -1,5 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
         CargoFlight cargoFlight = new CargoFlight("C123", "Tokyo", "Boeing 747", 12.5, 5000, 1000, true, true);
