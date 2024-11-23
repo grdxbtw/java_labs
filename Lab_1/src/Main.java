@@ -11,7 +11,6 @@ public class Main {
         return String.join(" ", words);
     }
 
-
     private static String reverseWordWithoutPunctuation(String word) {
 
         char[] characters = word.toCharArray();

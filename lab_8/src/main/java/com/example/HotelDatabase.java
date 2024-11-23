@@ -8,7 +8,8 @@ public class HotelDatabase {
     private static final String PASSWORD = "root_password";
 
     public static void main(String[] args) {
-        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD)) {
+        try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD))
+        {
             connection.setAutoCommit(false);
 
             HotelHandler.createRoom(connection, 101, "Single", 100.00);
@@ -40,7 +41,9 @@ public class HotelDatabase {
 
             HotelHandler.deleteBooking(connection, 1);
             connection.commit();
-        } catch (SQLException e) {
+        }
+        catch (SQLException e)
+        {
             e.printStackTrace();
         }
     }

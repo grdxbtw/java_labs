@@ -47,7 +47,6 @@ class Building {
         this.premises = premises;
     }
 
-
     public int getApartmentCount() {
         int count = 0;
         for (Premises p : premises) {
